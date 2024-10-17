@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgTitulo"
+        android:layout_width="331dp"
+        android:layout_height="126dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/restaurant_logo" />
+
+    <ImageView
+        android:id="@+id/imgRamen"
+        android:layout_width="137dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTitulo"
+        app:srcCompat="@drawable/ramen" />
+
+    <ImageView
+        android:id="@+id/imgYakisoba"
+        android:layout_width="137dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgRamen"
+        app:srcCompat="@drawable/yakisoba" />
+
+    <TextView
+        android:id="@+id/tvRamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Ramen"
+        app:layout_constraintStart_toEndOf="@+id/imgRamen"
+        app:layout_constraintTop_toTopOf="@+id/imgRamen" />
+
+    <TextView
+        android:id="@+id/tvTotalRamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="36000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgRamen"
+        app:layout_constraintStart_toEndOf="@+id/imgRamen"
+        app:layout_constraintTop_toBottomOf="@+id/tvCanRamen" />
+
+    <TextView
+        android:id="@+id/tvCanRamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cant."
+        app:layout_constraintStart_toEndOf="@+id/imgRamen"
+        app:layout_constraintTop_toBottomOf="@+id/tvRamen" />
+
+    <EditText
+        android:id="@+id/etCanRamen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="2"
+        android:hint="10"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCanRamen"
+        app:layout_constraintStart_toEndOf="@+id/tvCanRamen"
+        app:layout_constraintTop_toTopOf="@+id/tvCanRamen" />
+
+    <TextView
+        android:id="@+id/tvYakisoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Yakisoba"
+        app:layout_constraintStart_toEndOf="@+id/imgYakisoba"
+        app:layout_constraintTop_toTopOf="@+id/imgYakisoba" />
+
+    <TextView
+        android:id="@+id/tvCanYakisoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Cant."
+        app:layout_constraintStart_toEndOf="@+id/imgYakisoba"
+        app:layout_constraintTop_toBottomOf="@+id/tvYakisoba" />
+
+    <TextView
+        android:id="@+id/tvTotalYakisoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="6000"
+        app:layout_constraintBottom_toBottomOf="@+id/imgYakisoba"
+        app:layout_constraintStart_toEndOf="@+id/imgYakisoba"
+        app:layout_constraintTop_toBottomOf="@+id/tvCanYakisoba" />
+
+    <EditText
+        android:id="@+id/etCanYakisoba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:ems="2"
+        android:hint="2"
+        android:inputType="number"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvCanYakisoba"
+        app:layout_constraintStart_toEndOf="@+id/tvCanYakisoba"
+        app:layout_constraintTop_toTopOf="@+id/tvCanYakisoba" />
+
+    <TextView
+        android:id="@+id/tvTotalSinPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Total sin propina"
+        app:layout_constraintBottom_toTopOf="@+id/tvPropina"
+        app:layout_constraintStart_toStartOf="@+id/tvPropina" />
+
+    <TextView
+        android:id="@+id/tvPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Propina"
+        app:layout_constraintBottom_toTopOf="@+id/tvTotalApagar"
+        app:layout_constraintStart_toStartOf="@+id/tvTotalApagar" />
+
+    <TextView
+        android:id="@+id/tvTotalApagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Total a pagar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Switch
+        android:id="@+id/switchPropina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:checked="true"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvPropina"
+        app:layout_constraintTop_toTopOf="@+id/tvPropina" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
