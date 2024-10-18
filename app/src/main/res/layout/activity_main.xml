@@ -42,6 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Ramen"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imgRamen"
         app:layout_constraintTop_toTopOf="@+id/imgRamen" />
 
@@ -52,6 +53,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:hint="36000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imgRamen"
         app:layout_constraintStart_toEndOf="@+id/imgRamen"
         app:layout_constraintTop_toBottomOf="@+id/tvCanRamen" />
@@ -86,6 +88,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="Yakisoba"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imgYakisoba"
         app:layout_constraintTop_toTopOf="@+id/imgYakisoba" />
 
@@ -106,6 +109,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:hint="6000"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imgYakisoba"
         app:layout_constraintStart_toEndOf="@+id/imgYakisoba"
         app:layout_constraintTop_toBottomOf="@+id/tvCanYakisoba" />
@@ -148,6 +152,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
         android:text="Total a pagar"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -160,6 +165,7 @@
         android:checked="true"
         android:minWidth="48dp"
         android:minHeight="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPropina"
         app:layout_constraintEnd_toStartOf="@+id/tvPropina"
         app:layout_constraintTop_toTopOf="@+id/tvPropina" />
 
